@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for ZC_TVIAJES_AAC'
+define service ZUI_TVIAJES_AAC_O4 {
+  expose ZC_TVIAJES_AAC;
+}

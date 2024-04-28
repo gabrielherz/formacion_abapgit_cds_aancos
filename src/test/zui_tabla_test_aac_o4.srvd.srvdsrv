@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for ZC_TABLA_TEST_AAC'
+define service ZUI_TABLA_TEST_AAC_O4 {
+  expose ZC_TABLA_TEST_AAC;
+}

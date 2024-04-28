@@ -1,0 +1,54 @@
+@Metadata.layer: #CORE
+
+@UI: {
+headerInfo: {
+typeName: 'Travel',
+typeNamePlural: 'Reservas AAncos',
+          title: {
+            type: #STANDARD,
+            label: 'Booking',
+            value: 'BookingID'
+                }
+          }
+      }
+annotate entity Z_I_BOOKING_AAC
+    with 
+{ 
+  
+@UI.facet: [ { id:              'Booking',
+                purpose:         #STANDARD,
+                type:            #IDENTIFICATION_REFERENCE,
+                label:           'Booking',
+                position:        10 }]
+ // @UI: { 
+ //        identification: [ { position: 10 } ] }
+ TravelID;
+
+  //@UI: { lineItem:       [ { position: 10, importance: #HIGH } ],
+  //      identification: [ { position: 15 } ] }
+  @UI.lineItem:       [ { position: 10, importance: #HIGH }]
+  BookingID;
+
+  @UI: { lineItem:       [ { position: 20, importance: #HIGH } ],
+         identification: [ { position: 20 } ] }
+  BookingDate;
+
+  @UI: { lineItem:       [ { position: 30, importance: #HIGH } ],
+         identification: [ { position: 30 } ] }
+  AirlineID;
+
+  @UI: { lineItem:       [ { position: 40, importance: #HIGH } ],
+         identification: [ { position: 40 } ] }
+  ConnectionID;
+
+
+  @UI: { lineItem:       [ { position: 50, importance: #HIGH } ],
+         identification: [ { position: 50 } ] }
+  FlightDate;
+
+  @UI: { lineItem:       [ { position: 60, importance: #MEDIUM } ],
+         identification: [ { position: 60 } ] }
+  FlightPrice;
+
+}
+    

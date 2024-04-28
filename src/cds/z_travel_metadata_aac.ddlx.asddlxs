@@ -1,0 +1,56 @@
+@Metadata.layer: #CORE
+//@UI.presentationVariant: [{groupBy: [ 'AgencyID' , 'CustomerID' ]}]
+@UI: {
+  headerInfo: {
+    typeName: 'Travel',
+    typeNamePlural: 'Travels Listados',
+    title: {
+      type: #STANDARD,
+      label: 'Travel',
+      value: 'TravelID'
+    }
+  }
+}
+
+annotate view Z_I_TRAVEL_AAC with
+{
+
+@UI.facet: [ { id:              'Travel',
+                purpose:         #STANDARD,
+                type:            #IDENTIFICATION_REFERENCE,
+                label:           'TravelXXX',
+                position:        10 },
+               
+                { id:              'Booking',
+                purpose:         #STANDARD,
+                type:            #LINEITEM_REFERENCE,
+                label:           'Bookingxxx',
+                position:        20,
+                targetElement:   '_Booking'} ]
+
+  @UI.lineItem: [{position: 10, importance: #HIGH}]
+  @UI.selectionField: [{ position: 10 }]
+  TravelID;
+  @UI.lineItem: [{position: 20, importance: #HIGH}]
+  @UI.selectionField: [{ position: 10 }]
+  @UI.identification: [{ position: 10 }]
+  AgencyID;
+  @UI.lineItem: [{position: 30, importance: #HIGH}]
+  @UI.selectionField: [{ position: 10 }]
+  @UI.identification: [{ position: 20 }]
+  CustomerID;
+  @UI.lineItem: [{position: 40, importance: #HIGH}]
+  @UI.selectionField: [{ position: 10 }]
+  @UI.identification: [{ position: 30 }]
+  BeginDate;
+  @UI.lineItem: [{position: 50, importance: #HIGH}]
+  @UI.selectionField: [{ position: 10 }]
+  @UI.identification: [{ position: 40 }]
+  EndDate;
+  @UI.lineItem: [{position: 60, importance: #HIGH}]
+  @UI.identification: [{ position: 50 }]
+  Memo;
+  @UI.lineItem: [{position: 70, importance: #HIGH}]
+//    @UI.identification: [{ position: 70 }]
+  TotalPrice;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Servicio'
+define service ZANTONIO {
+  expose Z_INVOICE_ITEMS_000;
+}

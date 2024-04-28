@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for ZC_RAP100_AAC'
+define service ZUI_RAP100_AAC_O4 {
+  expose ZC_RAP100_AAC;
+}

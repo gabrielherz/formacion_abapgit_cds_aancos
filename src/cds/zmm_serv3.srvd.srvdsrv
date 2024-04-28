@@ -1,0 +1,4 @@
+@EndUserText.label: 'Servicio MM'
+define service ZMM_SERV3 {
+  expose C_PurchaseOrderTP;
+}

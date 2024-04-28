@@ -1,0 +1,4 @@
+@EndUserText.label: 'Ekemplo'
+define service ZMM7_SERV {
+  expose ZMM7_00;
+}

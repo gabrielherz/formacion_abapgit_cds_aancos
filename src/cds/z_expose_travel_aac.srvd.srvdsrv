@@ -1,0 +1,6 @@
+@EndUserText.label: 'Servicio Antonio'
+define service Z_EXPOSE_TRAVEL_AAC {
+  expose Z_I_TRAVEL_AAC;
+  expose Z_I_BOOKING_AAC;
+  expose /DMO/I_Connection as Connection;
+}

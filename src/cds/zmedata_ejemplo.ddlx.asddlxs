@@ -1,0 +1,11 @@
+@Metadata.layer: #CORE
+annotate view Z_INVOICE_ITEMS_000 with
+{
+  @UI.selectionField: [{ position: 10 }]
+  @UI.lineItem: [{ position: 10 }]
+  company_name;
+  @UI.lineItem: [{ position: 20 }]
+  gross_amount;
+  @UI.lineItem: [{ position: 30 }]
+  payment_status;
+}

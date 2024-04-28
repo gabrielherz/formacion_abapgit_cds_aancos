@@ -1,0 +1,4 @@
+@EndUserText.label: 'Ejemplo Servicio'
+define service ZSERVICIO_AAC {
+  expose Z_INVOICE_ITEMS_000;
+}
